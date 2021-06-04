@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  margin: 0 auto;
+
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 4px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.avatar {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 50%;
+}
+
+.name,
+.tag,
+.location {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5px;
+
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tag,
+.location {
+  font-size: 16px;
+  font-weight: 400;
+
+  color: rgb(148, 148, 148);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stats > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  height: 70px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(241, 248, 248);
+}
+.stats > li:not(:last-child) {
+  border-right: 1px solid rgb(181, 181, 181);
+}
+
+.label,
+.quantity {
+  width: 100%;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(148, 148, 148);
+}
