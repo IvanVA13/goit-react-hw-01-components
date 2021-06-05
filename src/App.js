@@ -1,5 +1,3 @@
-import './Profile.scss';
-
 import React from 'react';
 import { Profile } from './User';
 import { Statistics } from './Statistics';

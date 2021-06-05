@@ -1,3 +1,4 @@
+import './Profile.scss';
 import React from 'react';
 import defaultImg from '../img/default.jpg';
 import PropTypes from 'prop-types';

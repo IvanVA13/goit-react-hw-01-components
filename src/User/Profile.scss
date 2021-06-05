@@ -1,16 +1,3 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-style: normal;
-  text-align: center;
-}
-
 .profile {
   display: flex;
   flex-wrap: wrap;
