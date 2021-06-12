@@ -1,26 +1,21 @@
-import styles from './Statistics.module.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Statistics.module.scss';
+import inlineStyles from './styles';
 
 export const Statistics = ({ title, stats }) => {
-  const widthItem = 270 / stats.length;
-  const bgcolorGen = function () {
-    return `rgb(${Math.trunc(240 * Math.random())},${Math.trunc(
-      240 * Math.random(),
-    )},${Math.trunc(240 * Math.random())})`;
-  };
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>{title}</h2>
+      {styles.title ? <h2 className={styles.title}>{title}</h2> : ''}
       <ul className={styles['stat-list']}>
         {stats.map(({ id, label, percentage }) => (
           <li
             className={styles.item}
             key={id}
             style={{
-              width: widthItem,
-              height: widthItem,
-              backgroundColor: bgcolorGen(),
+              width: inlineStyles.widthItem(stats),
+              height: inlineStyles.widthItem(stats),
+              backgroundColor: inlineStyles.bgcolorGen(),
             }}
           >
             <span className={styles.label}>{label}</span>
