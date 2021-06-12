@@ -6,7 +6,7 @@ import inlineStyles from './styles';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      {styles.title ? <h2 className={styles.title}>{title}</h2> : ''}
+      {title && <h2 className={styles.title}>{title}</h2>}
       <ul className={styles['stat-list']}>
         {stats.map(({ id, label, percentage }) => (
           <li
